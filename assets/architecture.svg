@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="460" viewBox="0 0 1200 460">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#222"/>
+    </marker>
+    <style>
+      .box{fill:#fff;stroke:#222;stroke-width:2;rx:14;ry:14}
+      .title{font:700 23px Arial,sans-serif;fill:#111}
+      .text{font:18px Arial,sans-serif;fill:#222}
+      .small{font:16px Arial,sans-serif;fill:#333}
+      .line{stroke:#222;stroke-width:2.5;fill:none;marker-end:url(#arrow)}
+      .dash{stroke:#555;stroke-width:2;fill:none;stroke-dasharray:8 7;marker-end:url(#arrow)}
+      .accent{fill:#f3f6fb;stroke:#222;stroke-width:2;rx:14;ry:14}
+    </style>
+  </defs>
+  <rect x="35" y="155" width="170" height="105" class="box"/>
+  <text x="120" y="194" text-anchor="middle" class="title">Input</text>
+  <text x="120" y="226" text-anchor="middle" class="text">image / video</text>
+
+  <rect x="265" y="125" width="220" height="165" class="accent"/>
+  <text x="375" y="165" text-anchor="middle" class="title">Leaf bank</text>
+  <text x="375" y="200" text-anchor="middle" class="text">concept probabilities</text>
+  <text x="375" y="230" text-anchor="middle" class="text">encoder features</text>
+  <text x="375" y="262" text-anchor="middle" class="small">p(x), z(x)</text>
+
+  <rect x="545" y="95" width="280" height="225" class="box"/>
+  <text x="685" y="135" text-anchor="middle" class="title">Logical rule DAG</text>
+  <circle cx="625" cy="205" r="28" fill="#fff" stroke="#222" stroke-width="2"/>
+  <circle cx="745" cy="205" r="28" fill="#fff" stroke="#222" stroke-width="2"/>
+  <text x="625" y="212" text-anchor="middle" class="text">A</text>
+  <text x="745" y="212" text-anchor="middle" class="text">B</text>
+  <circle cx="685" cy="275" r="34" fill="#f3f6fb" stroke="#222" stroke-width="2"/>
+  <text x="685" y="282" text-anchor="middle" class="text">AND</text>
+  <path d="M640 225 L670 250" class="line"/>
+  <path d="M730 225 L700 250" class="line"/>
+  <text x="685" y="175" text-anchor="middle" class="small">neural subtree gates</text>
+
+  <rect x="885" y="125" width="265" height="165" class="accent"/>
+  <text x="1017" y="165" text-anchor="middle" class="title">Outputs</text>
+  <text x="1017" y="200" text-anchor="middle" class="text">rule satisfaction</text>
+  <text x="1017" y="230" text-anchor="middle" class="text">anomaly score</text>
+  <text x="1017" y="260" text-anchor="middle" class="text">violated-rule attribution</text>
+
+  <path d="M205 208 L265 208" class="line"/>
+  <path d="M485 208 L545 208" class="line"/>
+  <path d="M825 208 L885 208" class="line"/>
+
+  <rect x="485" y="365" width="400" height="62" class="box"/>
+  <text x="685" y="402" text-anchor="middle" class="text">Chimera training mixes operands across normal samples</text>
+  <path d="M685 365 L685 320" class="dash"/>
+</svg>

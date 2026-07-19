@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "Please cite the associated preprint and this software release."
+title: "Chimera Training for Logical Anomaly Detection"
+type: software
+authors:
+  - family-names: "Ascarate Castro"
+    given-names: "Alejandro"
+repository-code: "https://github.com/aleazk/Evaluator"
+version: 0.1.0
+date-released: 2026-07-19
+abstract: >-
+  Neuro-symbolic anomaly detection using explicit logical rule graphs,
+  feature-aware neural gates, and operand-level Chimera counterfactual training.

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1050" height="420" viewBox="0 0 1050 420">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#222"/></marker>
+    <style>
+      .box{fill:#fff;stroke:#222;stroke-width:2;rx:12;ry:12}
+      .soft{fill:#f3f6fb;stroke:#222;stroke-width:2;rx:12;ry:12}
+      .title{font:700 22px Arial,sans-serif;fill:#111}
+      .text{font:18px Arial,sans-serif;fill:#222}
+      .small{font:16px Arial,sans-serif;fill:#333}
+      .line{stroke:#222;stroke-width:2.5;fill:none;marker-end:url(#arrow)}
+      .dash{stroke:#444;stroke-width:2.5;fill:none;stroke-dasharray:8 6;marker-end:url(#arrow)}
+    </style>
+  </defs>
+  <text x="525" y="36" text-anchor="middle" class="title">Operand-level Chimera construction</text>
+
+  <rect x="40" y="80" width="220" height="105" class="box"/>
+  <text x="150" y="117" text-anchor="middle" class="title">Sample i</text>
+  <text x="150" y="151" text-anchor="middle" class="text">left feature hL(xᵢ)</text>
+  <text x="150" y="176" text-anchor="middle" class="small">truth tL(yᵢ)</text>
+
+  <rect x="40" y="240" width="220" height="105" class="box"/>
+  <text x="150" y="277" text-anchor="middle" class="title">Sample π(i)</text>
+  <text x="150" y="311" text-anchor="middle" class="text">right feature hR(xπᵢ)</text>
+  <text x="150" y="336" text-anchor="middle" class="small">truth tR(yπᵢ)</text>
+
+  <rect x="380" y="140" width="285" height="145" class="soft"/>
+  <text x="522" y="180" text-anchor="middle" class="title">Chimera operand pair</text>
+  <text x="522" y="218" text-anchor="middle" class="text">[ hL(xᵢ) ∥ hR(xπᵢ) ]</text>
+  <text x="522" y="252" text-anchor="middle" class="small">no mixed image is generated</text>
+
+  <rect x="790" y="140" width="220" height="145" class="box"/>
+  <text x="900" y="180" text-anchor="middle" class="title">Exact target</text>
+  <text x="900" y="220" text-anchor="middle" class="text">op(tL, tR)</text>
+  <text x="900" y="252" text-anchor="middle" class="small">AND / OR / ⇒ / ⇔</text>
+
+  <path d="M260 132 C315 132 330 178 380 190" class="line"/>
+  <path d="M260 292 C315 292 330 246 380 232" class="line"/>
+  <path d="M665 212 L790 212" class="line"/>
+
+  <text x="525" y="382" text-anchor="middle" class="text">Missing logical configurations become supervised without real anomalous samples.</text>
+</svg>

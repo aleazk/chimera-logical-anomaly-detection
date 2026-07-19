@@ -1,0 +1,10 @@
+dataset,rule_family,num_rules,independent_events,same_image_semantic,monolithic_normal,monolithic_chimera,neural_evaluator,wins_vs_independent
+CLEVRER,Simple implications,16,0.777,0.500,0.500,0.832,0.826,13/16
+CLEVRER,Chain and compound,10,0.707,0.500,0.500,0.827,0.844,10/10
+CLEVRER,All rules,26,0.750,0.500,0.500,0.829,0.833,23/26
+OpenImages,Simple implications,11,0.821,0.500,0.500,0.906,0.910,10/11
+OpenImages,Compound rules,5,0.820,0.500,0.500,0.880,0.874,4/5
+OpenImages,All rules,16,0.821,0.500,0.500,0.893,0.899,14/16
+VidOR,Simple implications,25,0.476,0.500,0.500,0.702,0.722,23/25
+VidOR,Compound rules,10,0.527,0.500,0.500,0.715,0.731,10/10
+VidOR,All rules,35,0.490,0.500,0.500,0.708,0.724,33/35
