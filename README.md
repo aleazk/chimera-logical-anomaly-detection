@@ -34,27 +34,27 @@ The system separates perception from structured evaluation:
 
 Normal same-image data may omit the only informative configuration. For an implication
 
-\[
-A \Rightarrow B,
-\]
+$$
+A \Rightarrow B
+$$
 
-the violation \((A=1,B=0)\) may never occur during training. A same-image learner can therefore collapse to a trivial always-normal solution.
+the violation $A=1,\;B=0$ may never occur during training. A same-image learner can therefore collapse to a trivial always-normal solution.
 
 For a binary node, Chimera training selects operands from different samples:
 
-\[
+$$
 u_i^{\mathrm{chim}}
 =
-[h_L(x_i)\,\|\,h_R(x_{\pi(i)})],
-\]
+\left[h_L(x_i) \,\Vert\, h_R(x_{\pi(i)})\right]
+$$
 
 and computes its target exactly:
 
-\[
+$$
 t_i^{\mathrm{chim}}
 =
-\operatorname{op}\!\left(t_L(y_i),t_R(y_{\pi(i)})\right).
-\]
+\operatorname{op}\!\left(t_L(y_i),\,t_R(y_{\pi(i)})\right)
+$$
 
 The target is **not interpolated**. No anomalous image is synthesized. The construction intervenes directly on the operands of the logical operator.
 
@@ -115,9 +115,9 @@ The script downloads MNIST, trains or loads a shared concept bank, trains the co
 
 For a true digit-7 image, the anomaly score is
 
-\[
-s(x)=\widehat P(1\land7\mid x).
-\]
+$$
+s(x)=\widehat{P}(1\land 7\mid x)
+$$
 
 High-scoring examples are 7s whose representation also carries unusually strong 1-like evidence.
 
