@@ -38,14 +38,14 @@ $$
 A \Rightarrow B
 $$
 
-the violation $A=1,\;B=0$ may never occur during training. A same-image learner can therefore collapse to a trivial always-normal solution.
+the violating assignment $A=1$ and $B=0$ may never occur during training. A same-image learner can therefore collapse to a trivial always-normal solution.
 
 For a binary node, Chimera training selects operands from different samples:
 
 $$
 u_i^{\mathrm{chim}}
 =
-\left[h_L(x_i) \,\Vert\, h_R(x_{\pi(i)})\right]
+[h_L(x_i), h_R(x_{\pi(i)})]
 $$
 
 and computes its target exactly:
@@ -53,7 +53,7 @@ and computes its target exactly:
 $$
 t_i^{\mathrm{chim}}
 =
-\operatorname{op}\!\left(t_L(y_i),\,t_R(y_{\pi(i)})\right)
+\mathrm{op}(t_L(y_i), t_R(y_{\pi(i)}))
 $$
 
 The target is **not interpolated**. No anomalous image is synthesized. The construction intervenes directly on the operands of the logical operator.
