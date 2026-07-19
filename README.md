@@ -10,7 +10,7 @@ A neuro-symbolic anomaly detector that learns to evaluate logical constraints **
 Rules are explicit directed acyclic graphs over perceptual concepts. Their internal logical nodes are learned neural gates. **Chimera training** creates missing truth configurations by combining subtree operands from different normal samples and assigning the exact Boolean target of the corresponding operator.
 
 <p align="center">
-  <img src="assets/architecture.svg" width="900" alt="Chimera logical anomaly detection architecture">
+  <img src="assets/architecture.png" width="900" alt="Chimera logical anomaly detection architecture">
 </p>
 
 ## Core idea
@@ -47,7 +47,7 @@ Its target is computed exactly as $t_i^{\mathrm{chim}} = \mathrm{op}(t_L(y_i), t
 The target is **not interpolated**. No anomalous image is synthesized. The construction intervenes directly on the operands of the logical operator.
 
 <p align="center">
-  <img src="assets/chimera_training.svg" width="760" alt="Operand-level Chimera construction">
+  <img src="assets/chimera_training.png" width="760" alt="Operand-level Chimera construction">
 </p>
 
 ## Current manuscript results
@@ -199,14 +199,6 @@ checkpoints/*.pt
 ```
 
 Checkpoints, datasets, caches, and run directories are intentionally excluded from version control.
-
-## Research direction: Logic VAE
-
-The validated system evaluates supplied logical hypotheses. A separate experimental direction models distributions over rule structures themselves.
-
-The prototype in [`research/logic_vae`](research/logic_vae/) serializes binary logical trees in postfix form, trains a Transformer VAE to reconstruct syntax, and predicts node-level truth probabilities from the latent representation. The longer-term goal is a generative semantic world model capable of proposing and evaluating rules under hypothetical state/action assignments.
-
-This component is explicitly **future research** and is not part of the Chimera benchmark results.
 
 ## Testing
 
