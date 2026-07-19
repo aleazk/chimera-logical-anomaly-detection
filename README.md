@@ -42,7 +42,7 @@ the violating assignment $A=1$ and $B=0$ may never occur during training. A same
 
 For a binary node, Chimera training selects operands from different samples. The mixed operand is $u_i^{\mathrm{chim}} = [h_L(x_i), h_R(x_{\pi(i)})]$.
 
-Its target is computed exactly as $t_i^{\mathrm{chim}} = \operatorname{op}(t_L(y_i), t_R(y_{\pi(i)}))$.
+Its target is computed exactly as $t_i^{\mathrm{chim}} = \mathrm{op}(t_L(y_i), t_R(y_{\pi(i)}))$.
 
 The target is **not interpolated**. No anomalous image is synthesized. The construction intervenes directly on the operands of the logical operator.
 
