@@ -235,7 +235,7 @@ arXiv:2605.26171, 2026.
 [Paper on arXiv](https://arxiv.org/abs/2605.26171)
 
 ```bibtex
-@misc{ascarate2026chimera,
+@article{ascarate2026chimera,
   title         = {When Rule Violations Are Rare: Chimera Training for Logical Anomaly Detection},
   author        = {Ascarate, Alejandro and Lebrat, Leo and Santa Cruz, Rodrigo and Fookes, Clinton and Salvado, Olivier},
   year          = {2026},
