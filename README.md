@@ -227,7 +227,26 @@ The MNIST and CIFAR-10 demonstrations illustrate the mechanism and qualitative r
 
 ## Citation
 
-A formal citation will be added with the public preprint. The repository includes [`CITATION.cff`](CITATION.cff) for software citation metadata.
+If you use this repository, please cite:
+
+**Alejandro Ascarate, Leo Lebrat, Rodrigo Santa Cruz, Clinton Fookes, and Olivier Salvado.**  
+*When Rule Violations Are Rare: Chimera Training for Logical Anomaly Detection.*  
+arXiv:2605.26171, 2026.  
+[Paper on arXiv](https://arxiv.org/abs/2605.26171)
+
+```bibtex
+@misc{ascarate2026chimera,
+  title         = {When Rule Violations Are Rare: Chimera Training for Logical Anomaly Detection},
+  author        = {Ascarate, Alejandro and Lebrat, Leo and Santa Cruz, Rodrigo and Fookes, Clinton and Salvado, Olivier},
+  year          = {2026},
+  eprint        = {2605.26171},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.LG},
+  url           = {https://arxiv.org/abs/2605.26171}
+}
+```
+
+The repository includes [`CITATION.cff`](CITATION.cff) for software citation metadata.
 
 ## License
 
