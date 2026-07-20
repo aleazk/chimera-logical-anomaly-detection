@@ -5,7 +5,7 @@ type: software
 authors:
   - family-names: "Ascarate Castro"
     given-names: "Alejandro"
-repository-code: "https://github.com/aleazk/Evaluator"
+repository-code: "https://github.com/aleazk/chimera-logical-anomaly-detection"
 version: 0.1.0
 date-released: 2026-07-19
 abstract: >-

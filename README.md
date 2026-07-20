@@ -62,7 +62,7 @@ Mean rule-level anomaly AUROC on the currently reported rule sets:
 
 The current ablation indicates that Chimera counterfactual supervision is the dominant empirical contribution. The modular rule-DAG evaluator adds local semantic supervision, inspectable subformula scores, and reusable learned subtrees without a material loss relative to a Chimera-trained monolithic predictor.
 
-Detailed values are in [`results/table2.csv`](results/table2.csv). They should be regenerated from the final paper configuration before an archival release.
+Detailed values are in [`results/table2.csv`](results/table2.csv). 
 
 ## Installation
 
@@ -119,7 +119,7 @@ python demos/cifar10_forbidden_conjunction.py \
   --eval_leaf
 ```
 
-CIFAR-10 is more difficult and noisier than MNIST. Report the leaf-bank test accuracy with any qualitative result.
+CIFAR-10 is more difficult and noisier than MNIST. Leaf-bank test accuracy is also reported with any qualitative result.
 
 ### Compare same-image and Chimera training
 
@@ -223,11 +223,30 @@ The method assumes:
 - enough support to train the primitive concept predictors;
 - careful validation of rules to avoid encoding dataset bias as normality.
 
-The MNIST and CIFAR-10 demonstrations illustrate the mechanism and qualitative ranking. Benchmark claims should be based on the structured CLEVRER, OpenImages, and VidOR experiments rather than on the toy demos.
+The MNIST and CIFAR-10 demonstrations illustrate the mechanism and qualitative ranking. Benchmark claims are based on the structured CLEVRER, OpenImages, and VidOR experiments rather than on the toy demos.
 
 ## Citation
 
-A formal citation will be added with the public preprint. The repository includes [`CITATION.cff`](CITATION.cff) for software citation metadata.
+If you use this repository, please cite:
+
+**Alejandro Ascarate, Leo Lebrat, Rodrigo Santa Cruz, Clinton Fookes, and Olivier Salvado.**  
+*When Rule Violations Are Rare: Chimera Training for Logical Anomaly Detection.*  
+arXiv:2605.26171, 2026.  
+[Paper on arXiv](https://arxiv.org/abs/2605.26171)
+
+```bibtex
+@article{ascarate2026chimera,
+  title         = {When Rule Violations Are Rare: Chimera Training for Logical Anomaly Detection},
+  author        = {Ascarate, Alejandro and Lebrat, Leo and Santa Cruz, Rodrigo and Fookes, Clinton and Salvado, Olivier},
+  year          = {2026},
+  eprint        = {2605.26171},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.LG},
+  url           = {https://arxiv.org/abs/2605.26171}
+}
+```
+
+The repository includes [`CITATION.cff`](CITATION.cff) for software citation metadata.
 
 ## License
 
