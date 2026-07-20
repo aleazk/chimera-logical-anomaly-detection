@@ -62,7 +62,7 @@ Mean rule-level anomaly AUROC on the currently reported rule sets:
 
 The current ablation indicates that Chimera counterfactual supervision is the dominant empirical contribution. The modular rule-DAG evaluator adds local semantic supervision, inspectable subformula scores, and reusable learned subtrees without a material loss relative to a Chimera-trained monolithic predictor.
 
-Detailed values are in [`results/table2.csv`](results/table2.csv). They should be regenerated from the final paper configuration before an archival release.
+Detailed values are in [`results/table2.csv`](results/table2.csv). 
 
 ## Installation
 
@@ -119,7 +119,7 @@ python demos/cifar10_forbidden_conjunction.py \
   --eval_leaf
 ```
 
-CIFAR-10 is more difficult and noisier than MNIST. Report the leaf-bank test accuracy with any qualitative result.
+CIFAR-10 is more difficult and noisier than MNIST. Leaf-bank test accuracy is also reported with any qualitative result.
 
 ### Compare same-image and Chimera training
 
@@ -223,7 +223,7 @@ The method assumes:
 - enough support to train the primitive concept predictors;
 - careful validation of rules to avoid encoding dataset bias as normality.
 
-The MNIST and CIFAR-10 demonstrations illustrate the mechanism and qualitative ranking. Benchmark claims should be based on the structured CLEVRER, OpenImages, and VidOR experiments rather than on the toy demos.
+The MNIST and CIFAR-10 demonstrations illustrate the mechanism and qualitative ranking. Benchmark claims are based on the structured CLEVRER, OpenImages, and VidOR experiments rather than on the toy demos.
 
 ## Citation
 
