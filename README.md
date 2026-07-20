@@ -131,6 +131,8 @@ python demos/compare_training_modes.py \
 
 This wrapper runs the same experiment with ordinary same-image supervision and with Chimera-only supervision, then assembles the generated extreme-score grids into a comparison image.
 
+**Remark.** On the lightweight MNIST and CIFAR-10 demos, normal-only training may retain some discriminatory signal, so the chimera advantage is visible but less dramatic than on CLEVRER, OpenImages, and VidOR, where same-image training collapses to near-chance performance.
+
 ## Full experiments
 
 The large experiment drivers are preserved under `experiments/`:
